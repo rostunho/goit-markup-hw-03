@@ -29,10 +29,13 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 94px;
-  padding-bottom: 94px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .link {
@@ -60,7 +63,7 @@ body {
 .title,
 .subtitle {
   font-size: 36px;
-  line-height: 1.17;
+  line-height: 1.172;
   margin: 0;
   padding: 0;
 }
@@ -179,11 +182,8 @@ body {
 
 /** Герой **/
 
-.hero {
+.section.hero {
   background-color: var(--secondary-bg-color);
-}
-
-.hero .container {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -229,28 +229,28 @@ body {
 }
 
 .feature .subtitle {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 
   font-size: 14px;
   font-weight: 700;
-  line-height: 1.14;
+  line-height: 1.143;
   text-transform: uppercase;
 }
 
 .feature .text {
+  line-height: 1.714;
   padding-bottom: 6px;
-  line-height: 1.71;
 }
 
 /* Чим ми займаємось */
 
-.activity .container {
+.section.activity {
   padding-top: 0px;
   text-align: center;
 }
 
 .activity .title {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .activity .list {
@@ -273,7 +273,7 @@ body {
 }
 
 .team .title {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .team .list {
@@ -292,22 +292,22 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team .subtitle {
-  padding-bottom: 10px;
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.17;
-}
-
 .team .card-desc {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
+.team .subtitle {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
 .team .text {
   font-size: 16px;
-  line-height: 1.17;
+  line-height: 1.19;
 }
 
 /* Портфоліо */
@@ -317,11 +317,11 @@ body {
 .filter.list {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .filter .item + .item {
-  padding-left: 8px;
+  margin-left: 8px;
 }
 
 .portfolio .button {
@@ -348,7 +348,7 @@ body {
 
 /* Галерея проектів */
 
-.portfolio .list {
+.cardset.list {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
@@ -390,12 +390,9 @@ body {
 /*** ФУТЕР ***/
 
 .footer {
-  background-color: var(--secondary-bg-color);
-}
-
-.footer .container {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: var(--secondary-bg-color);
 }
 
 .address {
@@ -403,7 +400,7 @@ body {
 }
 
 .footer .logo {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .footer .logo-text {
@@ -411,7 +408,7 @@ body {
 }
 
 .footer .list {
-  line-height: 1.71;
+  line-height: 1.714;
 }
 
 .footer .text {
@@ -419,7 +416,7 @@ body {
 }
 
 .footer .item:not(:last-child) {
-  padding-bottom: 6px;
+  margin-bottom: 6px;
 }
 
 .footer .contact {
