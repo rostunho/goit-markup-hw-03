@@ -76,6 +76,24 @@ body {
   display: block;
 }
 
+.hide {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.feature .list {
+  display: flex;
+}
+
 /*** ХЕДЕР ***/
 
 .header {
@@ -200,24 +218,6 @@ body {
 }
 
 /* Наші особливості */
-
-.hide {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.feature .list {
-  display: flex;
-}
 
 .feature .item {
   display: block;
@@ -357,9 +357,9 @@ body {
 
 .portfolio .card {
   display: block;
+  flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
-  flex-basis: calc(100% / 3 - 30px);
 }
 
 .portfolio .card-desc {
@@ -387,7 +387,7 @@ body {
   line-height: 1.875;
 }
 
-/* Футер */
+/*** ФУТЕР ***/
 
 .footer {
   background-color: var(--secondary-bg-color);
